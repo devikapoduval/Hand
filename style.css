@@ -1,0 +1,43 @@
+body{
+    background-color: #66e8a9;
+    color: rgb(255, 255, 255);
+}
+
+.heading{
+    background-color: #91e2ed;
+    color: #000000;
+    font-size: larger;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 70%;
+    letter-spacing: 10px;
+}
+
+#predict_lab
+{
+    background-color: white;
+    font-size: 14px;
+    padding: 6px;
+    border-radius: 10px;
+   
+  
+}#btn_capture
+{
+    background-color: rgb(194, 20, 20);
+}
+#p1
+{
+    font-family: 'Oswald', sans-serif;
+    
+}
+#p2
+{
+    font-family: 'Oswald', sans-serif;
+}
+#webcam_camera , #result_camera
+{
+  border: 2px dashed black;
+  width: 350px;
+  height: 300px; 
+ 
+}

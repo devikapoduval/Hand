@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <title>Hand Guestures</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+      <div class="container">
+          <center>
+              <h1 class="btn heading">Let's Hand Guestures
+                  <br>
+                <span>&#128077;</span>
+                <span>&#128076;</span>
+                <span>&#128400;</span>
+                
+              </h1>
+            </h1>
+            <br>
+            <br>
+            <p style="font-size: 25px;"  id="p1">Take a selfie of a gesture to know about it's meaning</p>
+            <p style="font-size: 18px;" id="p2">On the following gestures the model is trained - </p>
+            <p style="font-size: 30px;">
+              &#128076; | &#128077; | &#9996;
+            </p>
+                    
+                    <br>
+                  </p>
+                  <br>
+                  <div class="col-md-4 col-sm-12 col-xs-12">
+                    <label>Webcam view - </label>
+                    <div id="camera">
+                      </div>
+                      <br>
+                      <br>
+                    <button id="btn_capture" class = "btn btn-warning" onclick="capture_img()">Capture Image</button>
+                    <br>
+                    <br>
+                    <br>
+                    </div>
+            <span></span>
+            <div class="col-md-4 col-sm-12 col-xs-12">
+              <label id="predict_lab" class = "text-success">Prediction - </label>
+              <p style="font-size: 25px;" class = "emotion_name" id="result_emotion_name"></p>
+              <p style="font-size: 25px;" class = "emoji" id="emoji_update"></p>
+            
+              </div>
+                  <div class="col-md-4 col-sm-12 col-xs-12">
+                      <label>Snapshot - </label>
+                    <div id="result_camera">
+                    </div>
+                    <br>
+                    <br>
+                  <button id="btn_snapshot" class = "btn btn-primary" onclick="predict_img()">Predict Image</button>
+                  <br>
+                    <br>
+                    <br>
+                  </div>
+                    <br><br>
+            
+                  </div>
+            
+          </center>
+      </div>
+      <script src="main.js"></script>
+  </body>
+  </html>
